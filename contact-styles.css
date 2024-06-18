@@ -1,0 +1,22 @@
+#band-contact {
+    padding-top: 30px;
+}
+#band-contact table {
+    margin: auto;
+}
+#band-contact td:first-child {
+    text-align: right;
+    padding-right: 10px;
+}
+#band-contact button[type="submit"] {
+    text-align: center;
+}
+#band-contact input[type="text"],
+#band-contact input[type="email"] {
+    width: 250px;
+}
+#band-contact textarea {
+    resize: vertical;
+    min-height: 50px;
+    width: 250px;
+}

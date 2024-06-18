@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./contact-styles.css">
+    <script>
+        document.addEventListener( 'DOMContentLoaded', () => {
+            document.getElementById( 'band-contact' ).addEventListener(
+                'submit',
+                () => {
+                    alert(
+                        'Note: submissions are not handled yet. This page ' +
+                        'is just going to reload.'
+                    );
+                }
+            );
+        } );
+    </script>
+</head>
+
+<body>
+
+<div class="band-header">
+    <div class="spacer"></div>
+    <h2>Daniel's Wedding Band</h2>
+    <div class="notes"></div>
+</div>
+
+<h1>Contact Us</h1>
+
+<p>
+    Please reach out if you are considering hiring us for your wedding. The
+    earlier you reach out, the more likely we will be available. We are based
+    in Seattle, Washington but are willing to travel to other states depending
+    on your budget.
+</p>
+
+<form id="band-contact" method="GET" action="./contact.html">
+<table>
+    <tbody>
+        <tr>
+            <td><label for="input-first-name">First name</label></td>
+            <td><input type="text" id="input-first-name" required></td>
+        </tr>
+        <tr>
+            <td><label for="input-last-name">Last name</label></td>
+            <td><input type="text" id="input-last-name" required></td>
+        </tr>
+        <tr>
+            <td><label for="input-email">Email</label></td>
+            <td><input type="email" id="input-email" required></td>
+        </tr>
+        <tr>
+            <td><label for="input-date">Wedding date</label></td>
+            <td><input type="date" id="input-date" required></td>
+        </tr>
+        <tr>
+            <td><label for="input-freetext">What are you looking for?</label></td>
+            <td><textarea id="input-freetext" required></textarea></td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" id="contact-submit">Submit</button>
+            </td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+</form>
+
+
+<div class="band-footer">
+    <div class="band-footer--links">
+        <a href="./index.html">Home</a>
+        <a href="./reviews.html">Reviews</a>
+        <a href="./bios.html">Band members</a>
+        <span class="footer-current">Contact</span>
+    </div>
+    <div class="spacer"></div>
+</div>
+
+
+</body>
+</html>

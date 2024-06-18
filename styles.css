@@ -1,0 +1,94 @@
+/* Overall site */
+body {
+    width: 80%;
+    margin: auto;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+/* Utilities */
+.spacer {
+    height: 10px;
+    width: 100%;
+}
+
+/* "Daniel's Wedding Band" header */
+.band-header {
+    font-family: "Brush Script MT", sans-serif;
+    position: sticky;
+    top: 0px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+.band-header h2 {
+    color: red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.band-header .notes {
+    background-image: url('./music\ note.svg');
+    height: 30px;
+    width: 100%;
+}
+
+/* Footer with links */
+.band-footer {
+    background-color: white;
+    position: fixed;
+    width: inherit;
+    bottom: 0px;
+}
+.band-footer--links {
+    width: 100%;
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.band-footer--links a,
+.band-footer--links .footer-current {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+/* Link to the current page is replaced with a span */
+.band-footer--links span {
+    font-weight: bold;
+}
+
+/* For bios page */
+#daniel-img {
+    float: inline-end;
+}
+
+/* Handling for smaller screens */
+@media (max-width: 980px) {
+    body {
+        width: 90%;
+    }
+}
+@media (max-width: 580px) {
+    /* Remove bullets and indentation */
+    ul {
+        padding-left: 0px;
+        list-style: none;
+    }
+    /* Two columns of links */
+    .band-footer--links {
+        grid-template-columns: auto auto;
+        grid-row-gap: 10px;
+    }
+    /* Need more space for the footer; with JS this is the best we can do */
+    body {
+        padding-bottom: 80px;
+    }
+}
+@media (max-width: 400px) {
+    /* Single column of links*/
+    .band-footer--links {
+        display: block;
+    }
+    /* Need more space for the footer; with JS this is the best we can do */
+    body {
+        padding-bottom: 130px;
+    }
+}

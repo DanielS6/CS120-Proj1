@@ -1,0 +1,26 @@
+.band-review {
+    margin-bottom: 10px;
+    border: 1px solid grey;
+}
+.band-review--summary {
+    font-weight: bold;
+}
+.band-review--names {
+    font-style: italic;
+}
+/* Reviwes alternate sides */
+.band-review:nth-child(even) {
+    margin-right: 20%;
+}
+.band-review:nth-child(odd) {
+    margin-left: 20%;
+}
+
+/* Handling for smaller screens */
+@media (max-width: 1100px) {
+    .band-review:nth-child(even),
+    .band-review:nth-child(odd) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
